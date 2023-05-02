@@ -1,0 +1,32 @@
+// Get all
+
+GET http://localhost:3000/subscribers
+
+### Get one
+
+GET http://localhost:3000/subscribers/64513a684bbf212bacfbf67d
+
+### Creating One
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+// information to our server that is going to be JSON
+
+{
+    "name": "Amazing Person",
+    "subscribedToChannel": "Web Dev Simplified"
+}
+
+### Delete one
+
+DELETE http://localhost:3000/subscribers/64514585ddf1bcf91e15ec1d
+
+### Update one
+
+PATCH http://localhost:3000/subscribers/64513a684bbf212bacfbf67d
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
